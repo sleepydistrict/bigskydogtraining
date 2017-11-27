@@ -35,6 +35,10 @@
     "dataSource": "db",
     "public": false
   },
+  "classes": {
+    "dataSource": "db",
+    "public": true
+  },
   "clients": {
     "dataSource": "db",
     "public": true

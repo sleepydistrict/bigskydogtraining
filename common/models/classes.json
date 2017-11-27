@@ -1,28 +1,28 @@
 {
-  "name": "clients",
+  "name": "classes",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "name": {
+    "class": {
       "type": "string",
       "required": true
     },
-    "pet": {
+    "length": {
       "type": "string",
       "required": true
     },
-    "pet-age": {
+    "fee": {
       "type": "string",
       "required": true
     },
-    "email": {
+    "date": {
       "type": "string",
       "required": true
     },
-    "phone": {
+    "time": {
       "type": "string"
     }
   },

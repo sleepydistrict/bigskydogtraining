@@ -2,11 +2,11 @@
   "db": {
     "host": "localhost",
     "port": 27017,
-    "url": "",
+    "url": "mongodb://admin:admin@ds121686.mlab.com:21686/bigskydogtraining",
     "database": "bigskydogtraining-app",
     "password": "",
     "name": "db",
     "user": "",
     "connector": "mongodb"
-  }
+  }  
 }
