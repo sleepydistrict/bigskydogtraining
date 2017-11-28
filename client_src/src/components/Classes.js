@@ -38,7 +38,7 @@ class Classes extends Component{
         return (
             <div className="container-fluid">
                 <img className="responsive-img" width="100%" src={header} alt="avy dog approaching a helicopter" />
-                <h1 className="center">Classes</h1> 
+                <h1 className="center" color="grey">Classes</h1> 
                 <div className="row">
             <div className="col s12 m7">
               <div className="card">

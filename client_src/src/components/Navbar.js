@@ -7,7 +7,7 @@ class Navbar extends Component{
             <div className="container-fluid">
                 <nav className="grey darken-1">
                     <div className="nav-wrapper">
-                        <a href="/" className="brand-logo">Big Sky Dog Training</a>
+                        <a href="/" className="brand-logo center">Big Sky Dog Training</a>
                             <ul className="right hide-on-small-only">
                                 <li><Link to="/Admin"><i className="fa fa-users"></i>Admin</Link></li>
                             </ul>  
