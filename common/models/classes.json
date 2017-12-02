@@ -10,6 +10,10 @@
       "type": "string",
       "required": true
     },
+    "age_range": {
+      "type": "string",
+      "required": true
+    },
     "length": {
       "type": "string",
       "required": true

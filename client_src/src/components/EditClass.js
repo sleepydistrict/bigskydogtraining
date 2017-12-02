@@ -7,6 +7,7 @@ class EditClass extends Component{
     super(props);
     this.state = {
       class: '',
+      age_range: '',
       length: '',
       fee: '',
       date: '',
@@ -26,6 +27,7 @@ componentWillMount(){
         this.setState({
           id: response.data.id,
           class: response.data.class,
+          age_range: response.data.age_range,
           length: response.data.length,
           fee: response.data.fee,
           date: response.data.date,
@@ -59,6 +61,7 @@ componentWillMount(){
   onSubmit(e){
   const newClass = {
     class: this.refs.class.value,
+    age_range: this.refs.age_range.value,
     length: this.refs.length.value,
     fee: this.refs.fee.value,
     date: this.refs.date.value,
@@ -83,10 +86,14 @@ handleInputChange(e){
       <div>
         <br />
         <Link className="btn grey" to ="/classes">Back</Link>
-        <h1>Edit CLass</h1>
+        <h1>Edit Class</h1>
         <form onSubmit={this.onSubmit.bind(this)}>
           <div className="input-field">
             <input type="text" name="class" ref="class" value={this.state.class} 
+            onChange={this.handleInputChange} />
+          </div>
+          <div className="input-field">
+            <input type="text" name="age_range" ref="age_range" value={this.state.age_range} 
             onChange={this.handleInputChange} />
           </div>
           <div className="input-field">
@@ -105,7 +112,7 @@ handleInputChange(e){
             <input type="text" name="time" ref="time" value={this.state.time} 
             onChange={this.handleInputChange} />
           </div>
-          <input type="submit" value="Save" className="btn" />
+          <input type="submit" value="Submit" className="btn" />
           <button onClick={this.onDelete.bind(this)} className="btn red right">Delete</button>
         </form>
       </div>  
