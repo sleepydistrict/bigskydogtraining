@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 import ClassItem from './ClassItem';
 
 class ClassEdit extends Component{
@@ -34,6 +35,7 @@ class ClassEdit extends Component{
         })
         return (
             <div className="container-fluid">
+                <Link className="btn grey" to ="/admin">Back</Link>
                 <h1>Edit Classes</h1> 
                 <ul className="collection">{classItems}</ul>     
             </div>    

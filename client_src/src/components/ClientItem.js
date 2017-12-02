@@ -16,7 +16,8 @@ class ClientItem extends Component {
             {this.state.item.pet_age} <br />
             {this.state.item.email} <br />
             {this.state.item.phone}
-          </li>
+            <button className="btn-flat right">Delete</button>
+          </li>   
         )
     }
 }
