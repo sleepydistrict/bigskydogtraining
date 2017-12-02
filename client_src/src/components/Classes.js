@@ -97,7 +97,7 @@ class Classes extends Component{
                                     <div className="card-image">
                                         <img src={Coop} alt="German shepard avalanch dog with ski patrol owner." />
                                     </div>
-                                    <div class="card-content">
+                                    <div className="card-content">
                                         <p>Contact: Kristen Cooper @ Big Sky Dog Training <br/>
                                         Phone: 612 508 5413<br/>
                                         If you have any questions, please email us @ <a href="mailto:kcoopa4@gmail.com">kcoopa4@gmail.com</a><br/>

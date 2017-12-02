@@ -28,7 +28,6 @@ class Clients extends Component{
 
 
     render(){
-        console.log(this.state);
         const clientItems = this.state.clients.map((client, i) => {
             return(
                 <ClientItem key={client.id} item={client} />

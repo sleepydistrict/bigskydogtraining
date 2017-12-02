@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
+
 
 class ClientItem extends Component {
     constructor(props) {
@@ -10,14 +12,11 @@ class ClientItem extends Component {
 
     render() {
         return (
-          <li className="collection-item">
-            {this.state.item.name} <br />
-            {this.state.item.pet} <br />
-            {this.state.item.pet_age} <br />
-            {this.state.item.email} <br />
-            {this.state.item.phone}
-            <button className="btn-flat right">Delete</button>
-          </li>   
+            <li className="collection-item">
+            <Link to={`/clients/edit/${this.state.item.id}`}>
+            {this.state.item.name}
+            </Link>  
+            </li>
         )
     }
 }
