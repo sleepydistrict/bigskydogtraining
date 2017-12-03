@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import header from './header.jpg';
 import axios from 'axios';
-import ClassItem from './ClassItem';
+import ClassDetails from './ClassDetails';
 import puppy_1 from './puppy_1.jpg'
 import Coop from './Coop.jpg'
 
@@ -51,9 +51,9 @@ class Classes extends Component{
       }
     render(){
         console.log(this.state);
-        const classItems = this.state.classes.map((classes, i) => {
+        const classDetails = this.state.classes.map((classes, i) => {
             return(
-                <ClassItem key={classes.id} item={classes} />
+                <ClassDetails key={classes.id} item={classes} />
             )
         })
         return (
@@ -66,7 +66,7 @@ class Classes extends Component{
                                     <div className="card-image">
                                         <img src={puppy_1} alt="German shepard with infante" />
                                     </div>
-                                <ul className="collection">{classItems}</ul>     
+                                <ul className="collection">{classDetails}</ul>     
                                 </div>
                             </div>
                             <div className="col s6 right">
@@ -91,6 +91,10 @@ class Classes extends Component{
                                     <div className="input-field">
                                         <input type="text" name="phone" ref="phone" />
                                         <label htmlFor="phone">Phone Number (optional)</label>
+                                    </div>
+                                    <div className="input-field">
+                                        <input type="text" name="class" ref="class" />
+                                        <label htmlFor="class">Class That You Would Like To Take</label>
                                     </div>
                                     <input type="submit" value="Save" className="btn grey" />
                                     </form>   

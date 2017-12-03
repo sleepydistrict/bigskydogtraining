@@ -16,6 +16,7 @@ class AddClass extends Component{
   onSubmit(e){
     const newClass = {
       class: this.refs.class.value,
+      age_range: this.refs.age_range.value,
       length: this.refs.length.value,
       fee: this.refs.fee.value,
       date: this.refs.date.value,
@@ -35,6 +36,10 @@ class AddClass extends Component{
           <div className="input-field">
             <input type="text" name="class" ref="class" />
             <label htmlFor="class">Class: </label>
+          </div>
+          <div className="input-field">
+            <input type="text" name="age_range" ref="age_range" />
+            <label htmlFor="age_range">Age Range Of Pet: </label>
           </div>
           <div className="input-field">
             <input type="text" name="length" ref="length" />

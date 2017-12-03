@@ -35,6 +35,7 @@ class Clients extends Component{
         })
         return (
             <div className="container-fluid">
+            <br/>
                 <Link className="btn grey" to ="/admin">Back</Link>
                 <h1>Clients</h1> 
                 <ul className="collection">{clientItems}</ul>  

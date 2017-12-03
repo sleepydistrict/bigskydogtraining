@@ -35,10 +35,10 @@ class ClassList extends Component{
         })
         return (
             <div className="container-fluid">
+            <br/>
                 <Link className="btn grey" to ="/admin">Back</Link>
                 <h1>Classes</h1> 
                 <ul className="collection">{classItems}</ul>  
-   
                 <Link to="/classes/add" className="btn-floating btn-large red">
                     <i className="fa fa-plus"></i>
                 </Link>
