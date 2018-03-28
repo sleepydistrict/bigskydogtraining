@@ -51,10 +51,12 @@ class Login extends Component{
               <input type="text" name="pet" ref="pet" />
               <label htmlFor="pet">Password</label>
           </div>
+          <div className="center" >
           <Link to="/Admin"><input type="submit" value="login" className="btn grey" /></Link>  
+          </div>
         </form>  
         <br/> 
-          <div className="card-image">
+          <div className="center card-image">
               <img src={avy} alt="German shepard avalanch dog with ski patrol owner." />
           </div>
           </div>
