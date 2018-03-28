@@ -6,9 +6,11 @@ const Admin = () => (
   <div className="container-fluid center">
     <img className="responsive-img" width="80%" src={puppy_2} alt="Baby with german sheapard." />
   <h1>Admin</h1>
-  <a href="/classes" className="waves-effect waves-light btn">Edit Classes</a>
+  <a href="/classes" className="waves-effect waves-light btn">Edit Classes</a><br/><br/>
   <a href="/clients" className="waves-effect waves-light btn">Clients</a>
-
+  <br/>
+  <br/>
+  <br/>
   </div>  
 )
 
