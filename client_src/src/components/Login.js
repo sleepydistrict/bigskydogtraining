@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import avy from './avy_dog_1.jpg'
 
 class Login extends Component{
   constructor(){
@@ -50,12 +51,12 @@ class Login extends Component{
               <input type="text" name="pet" ref="pet" />
               <label htmlFor="pet">Password</label>
           </div>
-          <Link to="/Admin"><input type="submit" value="login" className="btn grey" /></Link>
-          
-        </form>   
-          {/* <div className="card-image">
-              <img src={Coop} alt="German shepard avalanch dog with ski patrol owner." />
-          </div> */}
+          <Link to="/Admin"><input type="submit" value="login" className="btn grey" /></Link>  
+        </form>  
+        <br/> 
+          <div className="card-image">
+              <img src={avy} alt="German shepard avalanch dog with ski patrol owner." />
+          </div>
           </div>
                             
       )
