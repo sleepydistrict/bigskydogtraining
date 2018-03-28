@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 class Navbar extends Component{
     render(){
         return (
-            <div className="container-fluid">
+            <div className="container-fluid navbar-fixed">
                 <nav className="grey darken-1">
                     <div className="nav-wrapper">
                         <a href="/" className="brand-logo center">Big Sky Dog Training</a>
