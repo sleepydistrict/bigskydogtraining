@@ -4,7 +4,7 @@ import axios from 'axios';
 import ClassDetails from './ClassDetails';
 import puppy_1 from './puppy_1.jpg'
 import Coop from './Coop.jpg'
-
+import swal from 'sweetalert';
 
 class Classes extends Component{
     constructor(){
@@ -48,6 +48,7 @@ class Classes extends Component{
         }
         this.AddClient(newClient);
         e.preventDefault();
+        swal("You're Message Has Been Sent")
       }
     render(){
         console.log(this.state);
