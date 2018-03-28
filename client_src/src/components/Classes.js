@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import header from './header.jpg';
+// import header from './header.jpg';
 import axios from 'axios';
 import ClassDetails from './ClassDetails';
-import puppy_1 from './puppy_1.jpg'
-import Coop from './Coop.jpg'
+import puppy_1 from './puppy_1.jpg';
+import Coop from './Coop.jpg';
 import swal from 'sweetalert';
+import "./Classes.css";
 
 class Classes extends Component{
     constructor(){
@@ -58,11 +59,11 @@ class Classes extends Component{
             )
         })
         return (
-            <div className="container-fluid">
-                <img className="responsive-img" width="100%" src={header} alt="avy dog approaching a helicopter" />
+            <div className="container-fluid" id="header">
+                {/* <img className="responsive-img" width="100%" src={header} alt="avy dog approaching a helicopter" /> */}
                         <div className="row">
                             <div className="col s6">
-                                <div className="card">
+                                <div className="card" id="cards">
                                     <h4 className="center grey white-text">Classes</h4> 
                                 <ul className="collection">{classDetails}</ul>     
                                     <div className="card-image">
@@ -71,7 +72,7 @@ class Classes extends Component{
                                 </div>
                             </div>
                             <div className="col s6 right">
-                                <div className="card">
+                                <div className="card" id="cards">
                                 <h4 className="center grey white-text">Desciption of Classes</h4>
                                     <h5>New Puppy, Puppy II, and Intermedaite</h5>
                                     Intended to give the owner/handler the education needed to have a successful relationship with their new dog.
