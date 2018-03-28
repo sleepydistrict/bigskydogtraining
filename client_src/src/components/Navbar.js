@@ -9,7 +9,7 @@ class Navbar extends Component{
                     <div className="nav-wrapper">
                         <a href="/" className="brand-logo center">Big Sky Dog Training</a>
                             <ul className="right hide-on-small-only">
-                                <li><Link to="/Admin"><i className="fa fa-users"></i>Admin</Link></li>
+                                <li><Link to="/Login"><i className="fa fa-users"></i>Admin</Link></li>
                             </ul>  
                     </div>  
                 </nav>  

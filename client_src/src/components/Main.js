@@ -8,11 +8,13 @@ import AddClass from './AddClass';
 import EditClient from './EditClient';
 import EditClass from './EditClass';
 import ClassList from './ClassList';
+import Login from './Login';
 
 const Main = () => (
   <main>
     <Switch>
         <Route exact path='/' component={Classes} />
+        <Route exact path='/login' component={Login} />
         <Route exact path='/admin' component={Admin} />
         <Route exact path='/clients' component={Clients} />
         <Route exact path='/classes' component={ClassList} />

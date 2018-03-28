@@ -110,7 +110,7 @@ class Classes extends Component{
                                         <input type="text" name="class" ref="class" />
                                         <label htmlFor="class">Class That You Would Like To Take</label>
                                     </div>
-                                    <input type="submit" value="Save" className="btn grey" />
+                                    <input type="submit" value="send" className="btn grey" />
                                     </form>   
                                     <div className="card-image">
                                         <img src={Coop} alt="German shepard avalanch dog with ski patrol owner." />
