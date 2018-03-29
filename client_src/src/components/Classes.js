@@ -62,21 +62,23 @@ class Classes extends Component{
             <div className="container-fluid" id="header">
                 {/* <img className="responsive-img" width="100%" src={header} alt="avy dog approaching a helicopter" /> */}
                         <div className="row">
-                            <div className="col s3">
+                            <div className="col s4">
                                 <div className="card" id="leftCard">
                                     <h4 className="center grey white-text">Classes</h4> 
-                                <ul className="collection">{classDetails}</ul>     
+                                <ul className="collection center">{classDetails}</ul>     
                                     <div className="card-image">
                                         <img src={puppy_1} alt="German shepard with infante" />
                                     </div>
                                 </div>
                             </div>
-                            <div className="col s9 right">
+                            <div className="col s8 right">
                                 <div className="card" id="cards">
                                 <h4 className="center grey white-text">Desciption of Classes</h4>
+                                    <div className="center">
                                     <h5>New Puppy, Puppy II, and Intermedaite</h5>
                                     Intended to give the owner/handler the education needed to have a successful relationship with their new dog.
                                     Throughout these courses, we will focus on building upon basic behaviors that are critical to safe and effective canine management.
+                                    </div>
                                     <ol>
                                         <li>Learning to get the behavior you want and how to mark it</li>
                                         <li>Basic behaviors and positions</li>
@@ -85,7 +87,7 @@ class Classes extends Component{
                                         <li>Getting your dog’s attention</li>
                                         <li>Appropriate socialization</li>
                                     </ol>
-                                <h4 className="center grey white-text">Register For A Class</h4>
+                                <h4 className="center green darken-3 white-text">Register For A Class</h4>
                                 <form onSubmit={this.onSubmit.bind(this)}>
                                     <div className="input-field">
                                         <input type="text" name="name" ref="name" />
