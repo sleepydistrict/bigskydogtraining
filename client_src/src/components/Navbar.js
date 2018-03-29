@@ -5,7 +5,7 @@ class Navbar extends Component{
     render(){
         return (
             <div className="container-fluid navbar-fixed">
-                <nav className="grey darken-1">
+                <nav className="blue darken-4">
                     <div className="nav-wrapper">
                         <a href="/" className="brand-logo center">Big Sky Dog Training</a>
                             <ul className="right hide-on-small-only">
