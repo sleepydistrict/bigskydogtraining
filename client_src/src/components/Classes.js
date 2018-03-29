@@ -62,8 +62,8 @@ class Classes extends Component{
             <div className="container-fluid" id="header">
                 {/* <img className="responsive-img" width="100%" src={header} alt="avy dog approaching a helicopter" /> */}
                         <div className="row">
-                            <div className="col s6">
-                                <div className="card" id="cards">
+                            <div className="col s3">
+                                <div className="card" id="leftCard">
                                     <h4 className="center grey white-text">Classes</h4> 
                                 <ul className="collection">{classDetails}</ul>     
                                     <div className="card-image">
@@ -71,7 +71,7 @@ class Classes extends Component{
                                     </div>
                                 </div>
                             </div>
-                            <div className="col s6 right">
+                            <div className="col s9 right">
                                 <div className="card" id="cards">
                                 <h4 className="center grey white-text">Desciption of Classes</h4>
                                     <h5>New Puppy, Puppy II, and Intermedaite</h5>
@@ -111,8 +111,9 @@ class Classes extends Component{
                                         <input type="text" name="class" ref="class" />
                                         <label htmlFor="class">Class That You Would Like To Take</label>
                                     </div>
-                                    <input type="submit" value="send" className="btn grey" />
+                                    <input type="submit" value="send" className="btn green" />
                                     </form>   
+                                    <br/>
                                     <div className="card-image">
                                         <img src={Coop} alt="German shepard avalanch dog with ski patrol owner." />
                                     </div>
