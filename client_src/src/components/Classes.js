@@ -64,7 +64,7 @@ class Classes extends Component{
                         <div className="row">
                             <div className="col s4">
                                 <div className="card" id="leftCard">
-                                    <h4 className="center blue darken-4 white-text">Classes</h4> 
+                                    <h4 className="center green darken-3 white-text">Classes</h4> 
                                 <ul className="collection center">{classDetails}</ul>     
                                     <div className="card-image">
                                         <img src={puppy_1} alt="German shepard with infante" />
@@ -73,7 +73,7 @@ class Classes extends Component{
                             </div>
                             <div className="col s8 right">
                                 <div className="card" id="cards">
-                                <h4 className="center blue darken-4 white-text">Desciption of Classes</h4>
+                                <h4 className="center green darken-3 white-text">Desciption of Classes</h4>
                                     <div className="center">
                                     <h5>New Puppy, Puppy II, and Intermedaite</h5>
                                     Intended to give the owner/handler the education needed to have a successful relationship with their new dog.
@@ -87,7 +87,7 @@ class Classes extends Component{
                                         <li>Getting your dog’s attention</li>
                                         <li>Appropriate socialization</li>
                                     </ol>
-                                <h4 className="center green darken-3 white-text">Register For A Class</h4>
+                                <h4 className="center red accent-4 white-text">Register For A Class</h4>
                                 <form onSubmit={this.onSubmit.bind(this)}>
                                     <div className="input-field">
                                         <input type="text" name="name" ref="name" />
@@ -113,14 +113,14 @@ class Classes extends Component{
                                         <input type="text" name="class" ref="class" />
                                         <label htmlFor="class">Class That You Would Like To Take</label>
                                     </div>
-                                    <input type="submit" value="send" className="btn green" />
+                                    <input type="submit" value="send" className="btn red accent-4" />
                                     </form>   
                                     <br/>
                                     <div className="card-image">
                                         <img src={Coop} alt="German shepard avalanch dog with ski patrol owner." />
                                     </div>
-                                    <div className="card-content blue darken-4">
-                                        <p>Contact: Kristen Cooper @ Big Sky Dog Training <br/>
+                                    <div className="card-content green darken-4 white-text">
+                                        <p>Contact: Kristen Cooper @ Big Sky Canine <br/>
                                         Phone: 612 508 5413<br/>
                                         If you have any questions, please email us @ <a href="mailto:kcoopa4@gmail.com">kcoopa4@gmail.com</a><br/>
                                         Copyright Big Sky Canine 2018
