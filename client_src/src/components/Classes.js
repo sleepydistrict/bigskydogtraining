@@ -49,7 +49,7 @@ class Classes extends Component{
         }
         this.AddClient(newClient);
         e.preventDefault();
-        swal("You're Message Has Been Sent")
+        swal("You're Message Has Been Sent");
       }
     render(){
         console.log(this.state);
